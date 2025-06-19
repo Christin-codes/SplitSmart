@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to bottom, hsla(203, 89%, 93%, 1), hsla(204, 90%, 88%, 1));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Inter;
+    text-transform: capitalize;
+    letter-spacing: 0%;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(139.39deg, #3498DB 23.03%, #F0F8FD 119.29%);
+    border: 1px solid hsla(203, 76%, 97%, 1);
+    box-shadow: 0px 4px 12px 5px hsla(204, 71%, 96%, 1);
+
+}
+
+.logo p{
+    font-size: 2rem;
+}
+
+.navlinks {
+    display: flex;
+    gap: 5.5rem;
+    list-style: none;
+    font-size: 2rem;
+    padding-right: 5.5rem;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks a:hover {
+    color: hsla(48, 87%, 54%, 1);
+}
+
+.home-container {
+    display: flex;
+    padding: 4.5rem 0;
+}
+
+.text-con {
+    padding: 4rem 2.5rem;
+}
+
+.text-con h1, p, .about-con h1 {
+    padding-left: 2.7rem;
+}
+
+.text-con h1 {
+    font-size: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 6rem;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.text-con p {
+    color: hsla(48, 100%, 23%, 1);
+    font-family: Inter;
+    font-size: 2.25rem;
+    line-height: 100%;
+    margin-bottom: 8rem;
+}
+
+.download {
+    display: flex;
+    font-size: 3rem;
+    line-height: 100%;
+    background: hsla(48, 89%, 50%, 1);
+    box-shadow: 0px 4px 0px 2px hsla(0, 0%, 0%, 0.25);
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    width: 40%;
+    height: 7rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.download-button {
+    text-decoration: none;
+    color: black;
+}
+
+.text-con img {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+.image-con img {
+    width: 50%;
+}
+
+#About {
+    font-size: 2rem;
+    line-height: 115%;
+    text-align: center;
+    color: black;
+    background: linear-gradient(180deg, #DEF1FD 0%, #EFC825 77.88%, #C4E6FC 100%);
+    backdrop-filter: blur(90px);
+    padding: 7rem 2.5rem;
+}
+
+.about-con {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    height: 86.44rem;
+}
+
+#Help {
+    padding: 7rem 5.2rem;
+    font-size: 2rem;
+    line-height: 115%;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    margin-bottom: -2.5rem;
+}
+
+footer {
+    background: linear-gradient(to top, #3498DB 23.03%, #F0F8FD 119.29%);
+    font-size: 2rem;
+    font-weight: normal;
+    color: hsla(0, 0%, 0%, 1);
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+
+@media (max-width:640px) {
+    
+    .navbar {
+        padding: .5rem 0;
+    }
+    
+    .navlinks {
+        gap: 1rem;
+        font-size: .7rem;
+        padding-right: 1rem;
+    }
+
+    .logo p{
+        font-size: .7rem;
+    }
+
+    .home-container {
+    padding: 2rem 0;
+}
+
+.text-con {
+    padding: 1rem .8rem;
+}
+
+.text-con h1, p, .about-con h1 {
+    padding-left: .6rem;
+    font-size: 1.8rem;
+}
+
+.text-con h1 {
+    margin-bottom: .5rem;
+}
+
+.text-con p {
+    font-size: .7rem;
+    margin-bottom: 2.5rem;
+}
+
+.download {
+    font-size: 1rem;
+    padding: .3rem .7rem;
+    width: 85%;
+    height: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 1.2px 0px 2px hsla(0, 0%, 0%, 0.25);
+    font-weight: 600;
+    
+}
+
+.text-con img {
+    width: 85%;
+    margin-top: 1.1rem;
+}
+
+.image-con img {
+    width: 65%;
+    margin-left: .9rem;
+}
+
+#About {
+    font-size: 1.6rem;
+    line-height: 75%;
+    padding: 4rem 1.5rem;
+}
+
+.about-con {
+    gap: 2rem;
+    height: 46rem;
+    padding: 0;
+}
+
+#Help h1 {
+    font-size: 1.8rem;
+    
+}
+
+.about-con p {
+    font-size: .8rem;
+}
+
+#Help {
+    padding: 4rem 1.5rem;
+    line-height: 75%;
+    gap: 2rem;
+}
+
+#Help h4, p {
+    font-size: .8rem;
+}
+
+}
+
+@media (min-width:641px) and (max-width:1024px) {
+
+.navbar {
+        padding: .5rem 0;
+    }
+    
+    .navlinks {
+        gap: 1rem;
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+
+    .logo p{
+        font-size: 1rem;
+    }
+
+    .home-container {
+    padding: 2rem 0;
+}
+
+.text-con {
+    padding: 1rem .8rem;
+}
+
+.text-con h1, p, .about-con h1, #Help h1 {
+    padding-left: .6rem;
+    font-size: 4rem;
+}
+
+.text-con h1 {
+    margin-bottom: .5rem;
+}
+
+.text-con p {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.download {
+    font-size: 2rem;
+    padding: .3rem .7rem;
+    width: 85%;
+    height: 4rem;
+    border-radius: 5px;
+    box-shadow: 0px 1.2px 0px 2px hsla(0, 0%, 0%, 0.25);
+    
+}
+
+.text-con img {
+    width: 85%;
+    margin-top: 1.1rem;
+}
+
+.image-con img {
+    width: 65%;
+    margin-left: .9rem;
+}
+
+
+.about-con p, #Help h4, p {
+    font-size: 2rem;
+}
+
+
+}
