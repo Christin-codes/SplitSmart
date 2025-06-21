@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .faq-question {
+        background-color: #555;
+        border: none;
+        font-size: 1.1em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        }
+        .faq-icon {
+        margin-right: 8px;
+        font-weight: bold;
+        font-size: 1.2em;
+        }
+        .faq-answer {
+        margin-left: 24px;
+        margin-top: 4px;
+        color: #444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Example FAQ Section -->
+<div class="faq-item">
+  <button class="faq-question" onclick="toggleFaq(this)">
+    <span class="faq-icon">+</span> What is SplitSmart?
+  </button>
+  <div class="faq-answer" style="display: none;">
+    SplitSmart is an app that helps you split bills easily with friends.
+  </div>
+</div>
+
+<!-- Repeat .faq-item for more questions -->
+
+<script>
+function toggleFaq(button) {
+  const answer = button.nextElementSibling;
+  const icon = button.querySelector('.faq-icon');
+  const isOpen = answer.style.display === 'block';
+  answer.style.display = isOpen ? 'none' : 'block';
+  icon.textContent = isOpen ? '+' : '−';
+}
+</script>
+</body>
+</html>
