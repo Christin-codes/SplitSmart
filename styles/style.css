@@ -434,6 +434,7 @@ footer li:nth-child(2) {
     }
 }
 
+/* Responsiveness for Phones and Medium Devices*/
 @media (min-width: 450px) and (max-width: 600px) {
     #home {
         display: flex;
@@ -457,6 +458,7 @@ footer li:nth-child(2) {
     }
 }
 
+/* Responsiveness for Tablets */
 @media (min-width: 600px) and (max-width: 768px) {
     #home {
         display: flex;
@@ -480,7 +482,7 @@ footer li:nth-child(2) {
     }
 }
 
-/* Responsiveness for Tablets */
+/* Responsiveness for Big Screens */
 @media (max-width: 900px) {
     .menuBar {
         display: block;
