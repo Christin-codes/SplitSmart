@@ -371,15 +371,6 @@ button.faq-question:active {
 .faq-answer4, .faq-answer5 {
     font-size: clamp(.8rem, 2vw, 1.2rem);
 }
-
-.privacy_link {
-    text-decoration: none;
-    color: white;
-}
-.privacy_link:hover {
-    color: #072092;
-}
-
 /* End of the Help Section Styling */
 
 /* ================================ */
@@ -443,6 +434,7 @@ footer li:nth-child(2) {
     }
 }
 
+/* Responsiveness for Phones and Medium Devices*/
 @media (min-width: 450px) and (max-width: 600px) {
     #home {
         display: flex;
@@ -466,6 +458,7 @@ footer li:nth-child(2) {
     }
 }
 
+/* Responsiveness for Tablets */
 @media (min-width: 600px) and (max-width: 768px) {
     #home {
         display: flex;
@@ -489,7 +482,7 @@ footer li:nth-child(2) {
     }
 }
 
-/* Responsiveness for Tablets */
+/* Responsiveness for Big Screens */
 @media (max-width: 900px) {
     .menuBar {
         display: block;
