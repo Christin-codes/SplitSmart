@@ -371,6 +371,16 @@ button.faq-question:active {
 .faq-answer4, .faq-answer5 {
     font-size: clamp(.8rem, 2vw, 1.2rem);
 }
+
+.faq-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.faq-link:hover {
+    color: #1877F2;
+}
 /* End of the Help Section Styling */
 
 /* ================================ */
