@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Terms of Service.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
     <link rel="icon" href="./images/SS Favicon.png">
     <script src="./scripts/script.js" defer></script>
-    <title>SplitSmart | Homepage</title>
+    <title>Terms Of Service</title>
 </head>
 <body>
-    <!-- Navigation Bar (Showing Logo and Nav-Links) -->
     <nav>
         <div class="logo">
-            <img src="./images/SplitSmart Logo.png" alt="SplitSmart Logo" width="55" height="auto">
+            <img src="SplitSmart Logo.png" alt="SplitSmart Logo" width="55" height="auto">
             <a href="index.html">SPLITSMART</a>
         </div>
         <ul class="sidebar">
@@ -49,162 +45,113 @@
             </li>
         </ul>
     </nav>
-
-    <!-- Hero Section -->
-    <main>
-        <section id="home">
-            <div class="text-section">
-                <div class="hero-text">
-                    <h1>Say goodbye to bill-splitting hassles with splitSmart</h1>
-                    <p>download now and make payments easy</p>
-                    <button class="btn">Download Now</button>
-                </div>
-                    
-                <div class="app-btn-download">
-                    <button>
-                        <img src="../images/logos_google-play-icon.svg" alt="Google Play Store">
-                        <div class="app-btn-text">
-                            <span>Get it on</span>
-                            <span>Google Play</span>
-                        </div>
-                    </button>
-                    <button>
-                        <img src="../images/Vector.svg" alt="Apple App Store">
-                        <div class="app-btn-text">
-                            <span>Download on the</span>
-                            <span>App Store</span>
-                        </div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="image-section">
-                <!-- <img src="Images/iPhone 16 Pro Max - 22.png" alt="Friends in Mobile">   -->
-                <div class="phone-shape">
-                    <div class="front-camera"></div>
-                    <div class="down-slide"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <div class="sub-about">
-                <div class="min-sect">
-                    <h3>What is SplitSmart?</h3>
-                    <p>
-                       SplitSmart helps friends, families, and teams manage group expenses without 
-                       drama. From splitting bills to tracking dues, we make payments clear, secure, 
-                       and stress-free.
-                    </p>
-                </div>
-                <!-- ===================================== -->
-                <div class="min-sect">
-                    <h3>Why We Built It?</h3>
-                    <p>
-                       We created SplitSmart to solve the everyday problem of managing group money. 
-                       Whether it's rent with roommates, church contributions, or hangouts with friends — 
-                       we wanted a tool that simplifies payment, reduces stress, and keeps everyone 
-                       accountable.
-                    </p>
-                </div>
-                <!-- ===================================== -->
-                <div class="min-sect">
-                    <h3>Who It's for?</h3>
-                    <span><i>SplitSmart is built for:</i></span>
-                    <ul>
-                        <li>Students sharing rent or food money</li>
-                        <li>Church or social groups collecting dues</li>
-                        <li>Families managing home expenses</li>
-                        <li>Friends going on trips or organizing events</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Help & Support Section -->
-        <section id="help">
-            <h2>Help & Support</h2>
-            <div class="faq">
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq()">
-                        <div class="faq-head">
-                            <span class="faq-text">FAQ</span>
-                            <span class="faq-icon">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <a href="FAQ.html" class="faq-link">Find quick answers about groups, payments, and your 
-                            splitsmart account.</a>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq2()">
-                        <div class="faq-head">
-                            <span class="faq-text">Contact Support</span>
-                            <span class="faq-icon2">+</span>
-                        </div>
-                        <div class="faq-answer2" style="display: none;">
-                            Reach our team via email, whatsapp, or in-app chat 
-                            if you need help with anything.
-                        </div>
-                    </button>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq3()">
-                        <div class="faq-head">
-                            <span class="faq-text">Terms Of Service</span>
-                            <span class="faq-icon3">+</span>
-                        </div>
-                        <div class="faq-answer3" style="display: none;">
-                            Learn about your rights and responsibilities 
-                            using splitsmart.
-                        </div>
-                    </button>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq4()">
-                        <div class="faq-head">
-                            <span class="faq-text">Privacy Policy</span>
-                            <span class="faq-icon4">+</span>
-                        </div>
-                        <div class="faq-answer4" style="display: none;">
-                            <a href="privacy.html" class="privacy_link">
-                                See how your personal data is collected, stored, 
-                                and protected.
-                            </a>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq5()">
-                        <div class="faq-head">
-                            <span class="faq-text">Report A Problem</span>
-                            <span class="faq-icon5">+</span>
-                        </div>
-                        <div class="faq-answer5" style="display: none;">
-                            Found a bug or issue? let us know directly so we 
-                            can fix it.
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <div class="boss">
+    <div class="intro">
+        <h1>Terms Of Service</h1>
+        <p>Last Updated:10/06/2025</p>
+    </div>
+    <div class="part">
+        <p>Welcome to <b>SplitSmart</b><br>
+        These terms of Service outline the rules for using our app. By accessing or using SplitSmart,you:
+     </p>
+     <ul class="list">
+        <li>Acknowledge that you have read and understood these terms </li>
+        <li>Agree to be bound by these terms</li>
+        <li>Agree to our privacy policy</li>
+        <li>Commit to comply with all applicable laws and regulations</li>
+     </ul>
+    </div>
+    <div class="overview">
+    <h2>Overview of SplitSmart</h2>
+    <p>SplitSmart is a peer-to-peer (P2P) fintech app that allows users to:
         <ul>
-            <li><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+            <li>Split bills and expenses with friends or groups(e.g rent,food, utilities)</li>
+            <li>Track who owes who/what</li>
+            <li>Send and receive payments quickly and securely</li>
+        </ul>
+    </p></div>
+    <div class="eligibility">
+        <h2>Eligibility</h2>
+        <p>You must be at least 18 years old to use SplitSmart.By creating an account,you confirm that you meet this age requirement.</p>
+    </div>
+    <div class="registration">
+        <h2>Account Registration</h2>
+        <p> To use certain features of SplitSmart,you must create an account. You agree to:</p>
+        <ul>
+            <li>Provide accurate information during signup</li>
+            <li>Keep your login credentials secure</li>
+            <li>Notify us immediately if you suspect unauthorized access</li>
+        </ul>
+        <p>You are responsible for all activity that occurs under your account.</p>
+    </div>
+     <div class="User Responsibilities">
+        <h2>User Responsibilities</h2>
+        <p>You agree not to:</p>
+        <ul>
+            <li>Use SplitSmart for any illegal and fraudulent purpose</li>
+            <li>Post or send spam,offensive content, or harmful materials</li>
+            <li>Interfere with the app's systems or security features</li>
+        </ul>
+        <p>Violation of these rules may lead to suspension or termination of your account.</p>
+    </div>
+     <div class="awareness">
+        <h2>User Awareness and Risk Disclaimer</h2>
+        <p> SplitSmart is a peer-to-peer payment and bill-splitting tool - not a financial investment or money-multiplying platform.<br>We strongly advise users to only join payment groups or transactions with people they personally know and trust. SplitSmart is not responsible for any loss,fraud, or dispute arising from user interactions or group participation.<br> Users are solely responsible for verifying the legitimacy and purpose of any group they join. Always exercise caution and good judgement.  </p>
+    </div>
+    <div class="collection">
+        <h2>Data collection and privacy</h2>
+        <p> SplitSmart collects personal data such as your name,contact details and financial information to provide and secure our services. We use third-party tools for identity verification, payment processing and KYC compliance. Please review our data policy to understand how your data is used and protected.</p>
+    </div>
+    <div class="third-party">
+        <h2>Third-Party Services</h2>
+        <p> SplitSmart relies on third-party services for:</p>
+        <ul>
+            <li>Payment Processing</li>
+            <li>Identity verification and KYC</li>
+            <li>Security and Hosting Infrastructure</li>
+        </ul>
+        <p>We are not responsible for the content,privacy practices, or performance of these third-party services. </p>
+    </div>
+    <div class="property">
+        <h2>Intellectual Property</h2>
+        <p> All contents,logos and technology in the SplitSmart app is owned by us and licensed to us. You shall not copy,modify, or distribute any part of the app without written permission.</p>
+    </div> 
+    <div class="availability">
+        <h2>Service Availability</h2>
+        <p> We work hard to keep SplitSmart running smoothly, but we do not guarantee uninterrupted service. We may modify,suspend,discontinue features at any time, with or without notice.</p>
+    </div> 
+    <div class="liability">
+        <h2>Disclaimer and Limitation of Liability</h2>
+        <p> SplitSmart is provided <i>as is</i> without warranties of any kind. We are not liable for any direct,indirect, or incidental damages related to your use of the app,to the maximum extent allowed by the law.</p>
+    </div> 
+     <div class="Termination">
+        <h2>Termination</h2>
+        <p> We may suspend or terminate your access to SplitSmart if you break these Terms or misuse the service.</p>
+    </div> 
+     <div class="changes">
+        <h2>Changes to these terms</h2>
+        <p> We may update these terms from time to time. If we make significant changes,we'll let you know via the app or email. Your continued use of SplitSmart means you accept the revised terms.</p>
+    </div> 
+     <div class="law">
+        <h2>Governing Law</h2>
+        <p> These terms are governed by the laws of <i>Nigeria</i>. Disputes wil be resolved under the jurisdiction of Nigerian courts.</p>
+    </div> 
+    </div>
+     <footer>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="#terms">Terms of Service</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
         <p>&copy; 2025 SplitSmart. All rights reserved.</p>
     </footer>
+    
+    
+    
+    
+
+
+
+
 </body>
 </html>
-
